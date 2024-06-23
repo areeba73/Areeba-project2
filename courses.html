@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+    <title>Courses</title>
+    <style>
+body{
+            overflow-x: hidden;
+        }
+        .front{
+            position: absolute;
+            top: 39%;
+            left: 9%;
+        }
+        .Learn1{
+            position: absolute;
+            top: 180%;
+            color: white;
+        }
+        .Learn1:hover{
+            color: white;
+        }
+        .learn2{
+            position: absolute;
+            top: 180%;
+            color: white;
+            left: 70px;
+        }
+        .learn2:hover{
+            color: white;
+        }
+        .find{
+            position: absolute;
+            color: white;
+            font-size: 70px;
+            font-weight: 600;
+            line-height: 100%;
+        }
+        .opacity{
+            /* border: 1px solid red ; */
+            background-color: rgba(0, 3, 32, 0.66);
+            position: absolute;
+            height: 70vh;
+            top: 0%;
+            opacity: 1;
+        }
+        .shadow{
+          box-shadow: 10px #888888;
+        }
+        .left{
+            margin-left: -8%;
+        }
+        .left2{
+            margin-left: -18%;
+        }
+        .art{
+          border: none;
+          position: absolute;
+          left: -10%;
+          border-radius: 5%;
+          background-color:  #0d6efd;
+          color:#e8e9ed;
+        }
+        .pro{
+          font-size: 22px;margin-bottom:2px;
+          font-weight: 700;
+        }
+        .duct{
+          color: black;
+        }
+        .ted{
+          border-radius: 50%;
+        }
+        .tea{
+         margin-left: 15%;
+         margin-top:-10%;
+        }
+        .book{
+          position: absolute;
+          top: 47.5%;
+          left: 32%;
+        }
+        .brand__more {
+          margin-top: -13%;
+          margin-left: 180px;
+        }
+        .arrow{
+          position: absolute;
+          left: 79%;
+          top: 81%;
+        }
+        .hov{
+          color:black;
+        }
+        .hov:hover{
+          color:blue;
+        }
+        .brand__more .link-btn {
+          color: #0e1133;
+        }
+        .footer{
+          position: absolute;
+          background-color: #0e1133;
+        }
+        .pb-40 {
+    padding-bottom: 40px;
+}
+.pt-90 {
+    padding-top: 90px;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, .75rem);
+    padding-left: var(--bs-gutter-x, .75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y)* -1);
+    margin-right: calc(var(--bs-gutter-x) / -2);
+    margin-left: calc(var(--bs-gutter-x) / -2);
+}
+.row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) / 2);
+    padding-left: calc(var(--bs-gutter-x) / 2);
+    margin-top: var(--bs-gutter-y);
+}
+.mb-50 {
+    margin-bottom: 50px;
+}
+.mb-22 {
+    margin-bottom: 22px;
+}
+a, button {
+    color: inherit;
+    outline: none;
+    border: none;
+}
+.footer__widget-body p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #a1a2ab;
+    margin-bottom: 30px;
+    font-weight: normal;
+    margin-top: 0;
+}
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+.footer__social ul li:not(:last-child) {
+    margin-right: 10px;
+}
+.footer__social ul li {
+    display: inline-block;
+}
+li {
+    list-style: none;
+}
+.footer__social ul li a {
+    display: inline-block;
+    font-size: 15px;
+    width: 44px;
+    height: 44px;
+    line-height: 46px;
+    text-align: center;
+    border: 2px solid #285da1;
+    background: #285da1;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    color: #ffffff;
+}
+.footer__social ul li a.tw {
+    background: #03a9f4;
+    border-color: #03a9f4;
+}
+.footer__social ul li a.pin {
+    background: #d2173f;
+    border-color: #d2173f;
+}
+.footer__widget-title {
+    padding-top: 5px;
+    font-size: 20px;
+    margin-top: 0px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #ffffff;
+}
+.footer__link ul li a {
+    color: #a1a2ab;
+}
+.footer__link ul li:not(:last-child) {
+    margin-bottom: 4px;
+}
+.footer__subscribe-input {
+    position: relative;
+}
+.mb-15 {
+    margin-bottom: 15px;
+}
+.footer__subscribe-input input {
+    width: 100%;
+    height: 60px;
+    padding: 0 30px;
+    padding-right: 50px;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+}
+.footer__subscribe-input button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 18px;
+    color: #ffffff;
+    background: #2b4eff;
+    width: 70px;
+    height: 60px;
+    overflow: hidden;
+    padding-right: 25px;
+}
+.footer__subscribe p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #83848a;
+    padding-right: 60px;
+}
+.footer__widget-body p {
+margin-bottom: 30px;
+}
+.footer__bottom {
+    padding: 20px 0;
+    border-top: 1px solid #1c1f3f;
+}
+.text-center {
+    text-align: center ;
+}
+.footer__copyright p {
+    font-size: 14px;
+    color: #83848a;
+    margin-bottom: 0;
+    font-weight: normal;
+    line-height: 26px;
+}.footer__copyright p a {
+    color: #ffffff;
+}
+        
+
+       
+</style>
+
+</head>
+<body>
+    <img src="./page-title.jpg" alt="bg">
+    <nav class="navbar navbar-expand-lg navbar-light  navbar fixed-top ml-5 mt-3">
+        <a class="navbar-brand" href="#"><img class="ml-5 animate__animated animate__heartBeat" src="https://html.hixstudio.net/educal/educal/assets/img/logo/logo-2.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ml-5" id="navbarScroll">
+          <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
+            <li class="nav-item">
+              <a style="color: white;" class="nav-link" href="./home.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a style="color: white;" class="nav-link ml-3" href="./courses.html">Courses</a>
+            </li>
+            <li class="nav-item dropdown drop">
+              <a style="color: white;" class="nav-link dropdown-toggle ml-3" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                Pages
+              </a>
+
+              <ul class="dropdown-menu border-0">
+                <li><a class="dropdown-item" href="./About.html">About us</a></li><hr class="pt-0">
+                <li><a class="dropdown-item" href="#">Instructor</a></li><hr class="pt-0">
+                <li><a class="dropdown-item" href="#">Sign in</a></li><hr class="pt-0">
+                <li><a class="dropdown-item" href="#">Sign up</a></li>
+              </ul>
+            </li>
+            <li class="nav-item ml-2">
+                <a style="color: white;" class="nav-link" href="./Blog.html">Blog <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item ">
+                <a style="color: white;" class="nav-link ml-2" href="./Contact.html">Contact</a>
+              </li>
+          </ul>
+          <form class="d-flex mr-5">
+        <div class="mr-4 pt-2">
+            <i style="color: white;" class="fa-solid fa-magnifying-glass"></i>
+        </div>
+            <button style="background-color: blue;color: white;padding: 10px 40px 10px 40px; font-weight: 500;" class="btn btn-outline-success border-0  mr-5" type="submit">Sign up</button>
+          </form>
+        </div>
+      </nav>
+      <div class="opacity w-100 ">
+      </div>
+      <div  class="front">
+        <h1 class="w-75 find">
+            Courses
+        </h1>
+        <p style="display: inline-block;" ><a style="text-decoration: none;" class="Learn Learn1" href="./home.html">Home <pre>       . </pre></a></p>
+        <p><a style="text-decoration: none;" class="Learn learn2" href="./courses.html">
+            Courses
+        </a>
+        </p>
+      </div>
+      <div class="container-fluid c8 mt-5">
+        <div class="row ml-5 mt-5">
+          <div class="col mb-5 ml-5 mt-5">
+            <div style="background-color: white; width: 90%; " class="mb-5 shadow">
+              <img style="border-radius: 5px;" class="w-100" src="https://html.hixstudio.net/educal/educal/assets/img/course/course-1.jpg" class="card-img-top" alt="...">
+              <span><button class="art mt-4 " style="margin-left: 15%;"> Art & Design </button></span>
+              <div class="" style="margin-left: 10%;color: #6d6e75;margin-top: 22%; font-size: 14px;">
+                <i class="fa-solid fa-book book"></i>
+                <p style="margin-top: -18%;">43 Lessons</p>
+               </div>
+              <h3 class="course__title-2 pro mt-2 ml-3 pr-3"><a  class="duct" style="text-decoration: none; font-size: 20px;" href="Blog.html">Become a Product Manager Learn The Skills & Job.</a></h3>
+              <img class="ted mt-3 ml-3" src="https://html.hixstudio.net/educal/educal/assets/img/course/teacher/home-3/teacher-1.jpg" alt="">
+            <div  class="course__teacher-info tea mb-4">
+            <p class="ml-4">Jim Séchen</p>
+           </div>
+           <p  style="margin-left: 9%;font-size: 20px;
+           color: #b128ff;
+           font-weight: 600;
+           padding-right: 5px;">Free</p>
+           <div class="brand__more pb-4">
+            <a class="hov" style="text-decoration: none;" href="about.html" class="link-btn">
+               View all partners
+               <i class="fa-solid fa-arrow-right arrow"></i>
+            </a>
+         </div>
+            </div>
+            </div>
+            <div class="col mb-5 mt-5">
+                <div style="background-color: white; width: 90%; " class="mb-5 shadow left">
+                  <img style="border-radius: 5px;" class="w-100" src="https://html.hixstudio.net/educal/educal/assets/img/course/course-2.jpg" class="card-img-top" alt="...">
+                  <span><button class="art mt-4 " style="margin-left: 15%;"> Mechanical </button></span>
+                  <div class="" style="margin-left: 10%;color: #6d6e75;margin-top: 22%; font-size: 14px;">
+                    <i class="fa-solid fa-book book" style="margin-left: -8%;"></i>
+                    <p style="margin-top: -18%;">43 Lessons</p>
+                   </div>
+                  <h3 class="course__title-2 pro mt-2 ml-3 pr-3"><a  class="duct" style="text-decoration: none; font-size: 20px;" href="Blog.html">Fundamental of music Theory Learn new</a></h3>
+                  <img class="ted mt-3 ml-3" src="https://html.hixstudio.net/educal/educal/assets/img/course/teacher/teacher-2.jpg" alt="">
+                <div  class="course__teacher-info tea mb-4">
+                <p class="ml-3">Barry Tone</p>
+               </div>
+               <p  style="margin-left: 9%;font-size: 20px;
+               color: #b128ff;
+               font-weight: 600;
+               padding-right: 5px;">Free</p>
+               <div class="brand__more pb-4">
+                <a class="hov" style="text-decoration: none;" href="about.html" class="link-btn">
+                   View all partners
+                   <i style="margin-top: -3%; margin-left: -8%;" class="fa-solid fa-arrow-right arrow"></i>
+                </a>
+             </div>
+                </div>
+             </div>
+             <div class="col mb-5 mt-5">
+                <div style="background-color: white; width: 90%; " class="mb-5 shadow left2">
+                  <img style="border-radius: 5px;" class="w-100" src="https://html.hixstudio.net/educal/educal/assets/img/course/course-7.jpg" class="card-img-top" alt="...">
+                  <span><button class="art mt-4 " style="margin-left: 15%;"> Development </button></span>
+                  <div class="" style="margin-left: 10%;color: #6d6e75;margin-top: 22%; font-size: 14px;">
+                    <i class="fa-solid fa-book book" style="margin-left: -16%;"></i>
+                    <p style="margin-top: -18%;">43 Lessons</p>
+                   </div>
+                  <h3 class="course__title-2 pro mt-2 ml-3 pr-3"><a  class="duct" style="text-decoration: none; font-size: 20px;" href="Blog.html">
+                    Bases Matemáticas dios Álgebra Ecuacion
+                  </a></h3>
+                  <img class="ted mt-3 ml-3" src="https://html.hixstudio.net/educal/educal/assets/img/course/teacher/home-3/teacher-1.jpg" alt="">
+                <div  class="course__teacher-info tea mb-4">
+                <p class="ml-3">Jim Séchen</p>
+               </div>
+               <p  style="margin-left: 9%;font-size: 20px;
+               color: #b128ff;
+               font-weight: 600;
+               padding-right: 5px;">Free</p>
+               <div class="brand__more pb-4">
+                <a class="hov" style="text-decoration: none;" href="about.html" class="link-btn">
+                   View all partners
+                   <i class="fa-solid fa-arrow-right arrow" style="margin-left: -17%;"></i>
+                </a>
+             </div>
+                </div>
+             </div>
+            </div>
+            
+            <div class="row ml-5">
+                <div class="col mb-5 ml-5">
+                  <div style="background-color: white; width: 90%; " class="mb-5 shadow">
+                    <img style="border-radius: 5px;" class="w-100" src="https://html.hixstudio.net/educal/educal/assets/img/course/course-3.jpg" class="card-img-top" alt="...">
+                    <span><button class="art mt-4 " style="margin-left: 15%;"> Devlopment </button></span>
+                    <div class="" style="margin-left: 10%;color: #6d6e75;margin-top: 22%; font-size: 14px;">
+                      <i class="fa-solid fa-book book"></i>
+                      <p style="margin-top: -18%;">14 Lessons</p>
+                     </div>
+                    <h3 class="course__title-2 pro mt-2 ml-3 pr-3"><a  class="duct" style="text-decoration: none; font-size: 20px;" href="Blog.html">Strategy Law And Organizations Foundation</a></h3>
+                    <img class="ted mt-3 ml-3" src="https://html.hixstudio.net/educal/educal/assets/img/course/teacher/teacher-3.jpg" alt="">
+                  <div  class="course__teacher-info tea mb-4">
+                  <p class="ml-4">Elon Gated</p>
+                 </div>
+                 <p  style="margin-left: 9%;font-size: 20px;
+                 color: #b128ff;
+                 font-weight: 600;
+                 padding-right: 5px;">Free</p>
+                 <div class="brand__more pb-4">
+                  <a class="hov" style="text-decoration: none;" href="about.html" class="link-btn">
+                     Know Details
+                     <i class="fa-solid fa-arrow-right arrow" style="margin-left: -8%; margin-top: -1%;"></i>
+                  </a>
+               </div>
+                  </div>
+                  </div>
+                  <div class="col mb-5">
+                      <div style="background-color: white; width: 90%; " class="mb-5 shadow left">
+                        <img style="border-radius: 5px;" class="w-100" src="https://html.hixstudio.net/educal/educal/assets/img/course/course-4.jpg" class="card-img-top" alt="...">
+                        <span><button class="art mt-4 " style="margin-left: 15%;"> Marketing </button></span>
+                        <div class="" style="margin-left: 10%;color: #6d6e75;margin-top: 22%; font-size: 14px;">
+                          <i class="fa-solid fa-book book" style="margin-left: -8%;"></i>
+                          <p style="margin-top: -18%;">22 Lessons</p>
+                         </div>
+                        <h3 class="course__title-2 pro mt-2 ml-3 pr-3"><a  class="duct" style="text-decoration: none; font-size: 20px;" href="Blog.html">The Business Inteligence Analyst cousre 2022</a></h3>
+                        <img class="ted mt-3 ml-3" src="https://html.hixstudio.net/educal/educal/assets/img/course/teacher/teacher-4.jpg" alt="">
+                      <div  class="course__teacher-info tea mb-4">
+                      <p class="ml-3">Eleanor Fant</p>
+                     </div>
+                     <p  style="margin-left: 9%;font-size: 20px;
+                     color: #b128ff;
+                     font-weight: 600;
+                     padding-right: 5px;">Free</p>
+                     <div class="brand__more pb-4">
+                      <a class="hov" style="text-decoration: none;" href="about.html" class="link-btn">
+                         Know Details
+                         <i style="margin-top: -1%; margin-left: -15%;" class="fa-solid fa-arrow-right arrow" ></i>
+                      </a>
+                   </div>
+                      </div>
+                   </div>
+                   <div class="col mb-5">
+                      <div style="background-color: white; width: 90%; " class="mb-5 shadow left2">
+                        <img style="border-radius: 5px;" class="w-100" src="https://html.hixstudio.net/educal/educal/assets/img/course/course-8.jpg" class="card-img-top" alt="...">
+                        <span><button class="art mt-4 " style="margin-left: 15%;"> Marketing </button></span>
+                        <div class="" style="margin-left: 10%;color: #6d6e75;margin-top: 22%; font-size: 14px;">
+                          <i class="fa-solid fa-book book" style="margin-left: -16%;"></i>
+                          <p style="margin-top: -18%;">22 Lessons</p>
+                         </div>
+                        <h3 class="course__title-2 pro mt-2 ml-3 pr-3"><a  class="duct" style="text-decoration: none; font-size: 20px;" href="Blog.html">
+                          The Business Inteligence Analyst cousre 2022
+                        </a></h3>
+                        <img class="ted mt-3 ml-3" src="https://html.hixstudio.net/educal/educal/assets/img/course/teacher/teacher-8.jpg" alt="">
+                      <div  class="course__teacher-info tea mb-4">
+                      <p class="ml-3">Brian Cumin</p>
+                     </div>
+                     <p  style="margin-left: 9%;font-size: 20px;
+                     color: #b128ff;
+                     font-weight: 600;
+                     padding-right: 5px;">Free</p>
+                     <div class="brand__more pb-4">
+                      <a class="hov" style="text-decoration: none;" href="about.html" class="link-btn">
+                         Know Details
+                         <i class="fa-solid fa-arrow-right arrow" style="margin-left: -25%;"></i>
+                      </a>
+                   </div>
+                      </div>
+                   </div>
+                  </div>
+
+                  <div class="row ml-5">
+                    <div class="col mb-5 ml-5">
+                      <div style="background-color: white; width: 90%; " class="mb-5 shadow">
+                        <img style="border-radius: 5px;" class="w-100" src="https://html.hixstudio.net/educal/educal/assets/img/course/course-5.jpg" class="card-img-top" alt="...">
+                        <span><button class="art mt-4 " style="margin-left: 15%;">Audio & Music </button></span>
+                        <div class="" style="margin-left: 10%;color: #6d6e75;margin-top: 22%; font-size: 14px;">
+                          <i class="fa-solid fa-book book"></i>
+                          <p style="margin-top: -18%;">18 Lessons</p>
+                         </div>
+                        <h3 class="course__title-2 pro mt-2 ml-3 pr-3"><a  class="duct" style="text-decoration: none; font-size: 20px;" href="Blog.html">Build Your Media and Public Presence</a></h3>
+                        <img class="ted mt-3 ml-3" src="https://html.hixstudio.net/educal/educal/assets/img/course/teacher/teacher-5.jpg" alt="">
+                      <div  class="course__teacher-info tea mb-4">
+                      <p class="ml-4">Pelican Steve</p>
+                     </div>
+                     <p  style="margin-left: 9%;font-size: 20px;
+                     color: #b128ff;
+                     font-weight: 600;
+                     padding-right: 5px;">Free</p>
+                     <div class="brand__more pb-4">
+                      <a class="hov" style="text-decoration: none;" href="about.html" class="link-btn">
+                         Know Details
+                         <i class="fa-solid fa-arrow-right arrow" style="margin-left: -8%; margin-top: -1%;"></i>
+                      </a>
+                   </div>
+                      </div>
+                      </div>
+                      <div class="col mb-5">
+                          <div style="background-color: white; width: 90%; " class="mb-5 shadow left">
+                            <img style="border-radius: 5px;" class="w-100" src="https://html.hixstudio.net/educal/educal/assets/img/course/course-6.jpg" class="card-img-top" alt="...">
+                            <span><button class="art mt-4 " style="margin-left: 15%;"> UX Design </button></span>
+                            <div class="" style="margin-left: 10%;color: #6d6e75;margin-top: 22%; font-size: 14px;">
+                              <i class="fa-solid fa-book book" style="margin-left: -8%;"></i>
+                              <p style="margin-top: -18%;">13 Lessons</p>
+                             </div>
+                            <h3 class="course__title-2 pro mt-2 ml-3 pr-3"><a  class="duct" style="text-decoration: none; font-size: 20px;" href="Blog.html">Creative writing Through Storytelling</a></h3>
+                            <img class="ted mt-3 ml-3" src="https://html.hixstudio.net/educal/educal/assets/img/course/teacher/teacher-6.jpg" alt="">
+                          <div  class="course__teacher-info tea mb-4">
+                          <p class="ml-3">Shahnewaz Sakil</p>
+                         </div>
+                         <p  style="margin-left: 9%;font-size: 20px;
+                         color: #b128ff;
+                         font-weight: 600;
+                         padding-right: 5px;">Free</p>
+                         <div class="brand__more pb-4">
+                          <a class="hov" style="text-decoration: none;" href="about.html" class="link-btn">
+                             Know Details
+                             <i style="margin-top: -1%; margin-left: -15%;" class="fa-solid fa-arrow-right arrow" ></i>
+                          </a>
+                       </div>
+                          </div>
+                       </div>
+                       <div class="col mb-5">
+                          <div style="background-color: white; width: 90%; " class="mb-5 shadow left2">
+                            <img style="border-radius: 5px;" class="w-100" src="https://html.hixstudio.net/educal/educal/assets/img/course/course-9.jpg" class="card-img-top" alt="...">
+                            <span><button class="art mt-4 " style="margin-left: 15%;"> UX Design </button></span>
+                            <div class="" style="margin-left: 10%;color: #6d6e75;margin-top: 22%; font-size: 14px;">
+                              <i class="fa-solid fa-book book" style="margin-left: -16%;"></i>
+                              <p style="margin-top: -18%;">25 Lessons</p>
+                             </div>
+                            <h3 class="course__title-2 pro mt-2 ml-3 pr-3"><a  class="duct" style="text-decoration: none; font-size: 20px;" href="Blog.html">
+                              Creative Writing Through Storytelling
+                            </a></h3>
+                            <img class="ted mt-3 ml-3" src="https://html.hixstudio.net/educal/educal/assets/img/course/teacher/teacher-9.jpg" alt="">
+                          <div  class="course__teacher-info tea mb-4">
+                          <p class="ml-3">Hilary Ouse</p>
+                         </div>
+                         <p  style="margin-left: 9%;font-size: 20px;
+                         color: #b128ff;
+                         font-weight: 600;
+                         padding-right: 5px;">Free</p>
+                         <div class="brand__more pb-4">
+                          <a class="hov" style="text-decoration: none;" href="about.html" class="link-btn">
+                             Know Details
+                             <i class="fa-solid fa-arrow-right arrow" style="margin-left: -25%;"></i>
+                          </a>
+                       </div>
+                          </div>
+                       </div>
+                      </div>
+    </div>
+
+<div class="container">
+    <div class="row" style="background-color: #0d6efd;">
+        <div class="col p-4">
+            <h3 class="ml-5" style="color: white; font-size: 50px;">You can be your own <br> Guiding star with our help</h3>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid footer">
+    <div class="row">
+      <div class="col">
+        <footer>
+          <div class="footer__area footer-bg">
+             <div class="footer__top pt-90 pb-40">
+                <div class="container">
+                   <div class="row">
+                      <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                         <div class="footer__widget mb-50">
+                            <div class="footer__widget-head mb-22">
+                               <div class="footer__logo">
+                                  <a href="home.html">
+                                     <img src="https://html.hixstudio.net/educal/educal/assets/img/logo/logo-2.png" alt="">
+                                  </a>
+                               </div>
+                            </div>
+                            <div class="footer__widget-body">
+                               <p>Great lesson ideas and lesson plans for ESL teachers! Educators can customize lesson plans to best.</p>
+  
+                               <div class="footer__social">
+                                  <ul>
+                                     <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                                     <li><a href="#" class="tw"><i class="fa-brands fa-twitter"></i></a></li>
+                                     <li><a href="#" class="pin"><i class="fa-brands fa-pinterest"></i></a></li>
+                                  </ul>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                      <div class="col-xxl-2 offset-xxl-1 col-xl-2 offset-xl-1 col-lg-3 offset-lg-0 col-md-2 offset-md-1 col-sm-5 offset-sm-1">
+                         <div class="footer__widget mb-50">
+                            <div class="footer__widget-head mb-22">
+                               <h3 class="footer__widget-title">Company</h3>
+                            </div>
+                            <div class="footer__widget-body">
+                               <div class="footer__link">
+                                  <ul>
+                                     <li><a href="#">About</a></li>
+                                     <li><a href="#">Courses</a></li>
+                                     <li><a href="#">Events</a></li>
+                                     <li><a href="#">Instructor</a></li>
+                                     <li><a href="#">Career</a></li>
+                                     <li><a href="#">Become a Teacher</a></li>
+                                     <li><a href="#">Contact</a></li>
+                                  </ul>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                      <div class="col-xxl-2 col-xl-2 col-lg-2 offset-lg-0 col-md-3 offset-md-1 col-sm-6">
+                         <div class="footer__widget mb-50">
+                            <div class="footer__widget-head mb-22">
+                               <h3 class="footer__widget-title">Platform</h3>
+                            </div>
+                            <div class="footer__widget-body">
+                               <div class="footer__link">
+                                  <ul>
+                                     <li><a href="#">Browse Library</a></li>
+                                     <li><a href="#">Library</a></li>
+                                     <li><a href="#">Partners</a></li>
+                                     <li><a href="#">News &amp; Blogs</a></li>
+                                     <li><a href="#">FAQs</a></li>
+                                     <li><a href="#">Tutorials</a></li>
+                                  </ul>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                      <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-5 col-sm-6">
+                         <div class="footer__widget footer__pl-70 mb-50">
+                            <div class="footer__widget-head mb-22">
+                               <h3 class="footer__widget-title">Subscribe</h3>
+                            </div>
+                            <div class="footer__widget-body">
+                               <div class="footer__subscribe">
+                                  <form action="#">
+                                     <div class="footer__subscribe-input mb-15">
+                                        <input type="email" placeholder="Your email address">
+                                        <button type="submit">
+                                          <i class="fa-solid fa-arrow-right"></i>
+                                          
+                                        </button>
+                                     </div>
+                                  </form>
+                                  <p>Get the latest news and updates right at your inbox.</p>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+             <div class="footer__bottom">
+                <div class="container">
+                   <div class="row">
+                      <div class="col-xxl-12">
+                         <div class="footer__copyright text-center">
+                            <p>© 2022 Educal, All Rights Reserved. Design By <a href="index.html">Theme Pure</a></p>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </footer>
+      </div>
+    </div>
+  </div>  
+
+
+
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+ AOS.init();
+</script>
+<script src="https://kit.fontawesome.com/766773c11e.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+</body>
+</html>
